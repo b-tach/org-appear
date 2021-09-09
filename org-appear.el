@@ -116,16 +116,16 @@ nil if the cursor was not on an element.")
 (defun org-appear--set-elements ()
   "Add elements to toggle to `org-appear-elements'."
   (let ((emphasis-elements '(bold
-			     italic
-			     underline
-			     strike-through
-			     verbatim
-			     code))
-	(script-elements '(subscript
-			   superscript))
-	(entity-elements '(entity))
-	(link-elements '(link))
-	(keyword-elements '(keyword)))
+			                       italic
+			                       underline
+			                       strike-through
+			                       ;;verbatim
+			                       code))
+	      (script-elements '(subscript
+			                     superscript))
+	      (entity-elements '(entity))
+ 	      (link-elements '(link))
+	      (keyword-elements '(keyword)))
 
     ;; HACK: is there a better way to do this?
     (setq-local org-appear--prev-elem nil)
